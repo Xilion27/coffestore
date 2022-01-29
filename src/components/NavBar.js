@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import CartWidget from './CartWidget.js';
 
 const NavBar = () => {
     return (
@@ -37,6 +38,7 @@ const NavBar = () => {
             </form>
           </div>
         </div>
+        <CartWidget />
       </nav>
     )
 }
