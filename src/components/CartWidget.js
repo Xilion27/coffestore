@@ -2,7 +2,7 @@ import cart from "../cart.jpg"
 
 const CartWidget = () => {
     return (
-        <img src={cart} />
+        <img width={60} height={50} src={cart} alt='carrito'/>
         
     )
 }

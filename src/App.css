@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.NavBar-logo {
+  height: fit-content;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

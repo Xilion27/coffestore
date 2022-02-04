@@ -1,13 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar';
-import ItemListContainer from './components/ItemListContainer'
+import Items from './components/ItemCount'
+
 
 function App() {
   return (
     <>
-    <NavBar></NavBar>
-    <ItemListContainer greeting="Hola Mundo Coder" />
+    <NavBar />
+    <Items /> 
     </>
     
   );
