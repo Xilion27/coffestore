@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const Items = (props) => {
-    const [amount, setAmount] = useState(0), min='0';
+    const [amount, setAmount] = useState(0);
     
 
 const countMore = () => {
