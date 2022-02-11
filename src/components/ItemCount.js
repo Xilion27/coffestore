@@ -30,11 +30,14 @@ useEffect(() => {
 
 return (
     <>
-        <div>
+        <div className="text-center">
            {amount} Items 
         </div>
-        <button className="btn btn-secondary border" onClick={countLess}>Restar</button>
-        <button className="btn btn-primary border" onClick={countMore}>Sumar</button>        
+        <div className="row">
+            <button className="btn btn-secondary border col-sm-6" onClick={countLess}>-</button>
+            <button className="btn btn-primary border col-sm-6" onClick={countMore}>+</button>  
+        </div>
+        <a href="#" className="btn btn-primary">Add to Cart</a>
     </>
 )
 
