@@ -2,15 +2,19 @@ import { useEffect, useState } from "react";
 import Items from "./ItemCount";
 import {list, getList} from "./ItemList";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useParams } from "react-router-dom";
 
 
 
 export default function ItemListContainer() {
     const [items, setItems] = useState([]);
+    const {idCategory} = useParams();
+
+        console.log(idCategory)
 
 //Componentdidmount
 useEffect(() => {
-    getList(list, 2000)
+    getList(list, 1000)
     .then((res) => setItems(res))
     .catch((e) => console.log(e));
 }, [])
