@@ -12,12 +12,18 @@ export default function ItemListContainer() {
 
         console.log(idCategory)
 
-//Componentdidmount
+//Componentdidupdate
 useEffect(() => {
-    getList(list, 1000)
-    .then((res) => setItems(res))
-    .catch((e) => console.log(e));
-}, [])
+    if (idCategory === undefined) {
+        getList(list, 1000)
+            .then((res) => setItems(res))
+            .catch((e) => console.log(e));
+    } else {
+        getList(list.filter(item => item.idCategory === parseInt(idCategory)), 1000)
+            .then((res) => setItems(res))
+            .catch((e) => console.log(e)); 
+        }
+}, [idCategory])
 
 return (
     <div className="row m-3 center">

@@ -17,10 +17,13 @@ const NavBar = () => {
                 <Link to='/' className="nav-link active" aria-current="page">Home</Link>
               </li>
               <li className="nav-item">
-                <Link to='/shop' className="nav-link">Catalogo</Link>
+                <Link to='/category/#' className="nav-link">Catalogo</Link>
               </li>
-              <li className="nav-item dropdown">
-                <Link to="/category/1" className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <li className="nav-item">
+                <Link to='/item/2' className="nav-link">Detalle</Link>
+              </li>
+              <li className="nav-item dropdown" >
+                <Link to="/category/2" className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Categorias
                 </Link>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">

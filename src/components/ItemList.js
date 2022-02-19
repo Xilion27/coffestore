@@ -1,12 +1,14 @@
 export const list = [
     {
+      
       'title': "Black",
       'description': "Black coffee is as simple as it gets with ground coffee beans steeped in hot water, served warm. And if you want to sound fancy, you can call black coffee by its proper name: cafe noir.",
       'image' : "https://media.istockphoto.com/photos/cup-of-coffee-with-heart-shape-smoke-and-coffee-beans-on-burlap-sack-picture-id1199467344?b=1&k=20&m=1199467344&s=170667a&w=0&h=4HfWi2vsFxw_9F5vuaAlQPNDJSt-h8fLleLLID2UEiI=",
       'ingredients': [
         "Coffee"
       ],
-      "id": 1
+      idCategory: 1,
+      id: 1
     },
     {
       "title": "Latte",
@@ -16,6 +18,7 @@ export const list = [
         "Espresso",
         "Steamed Milk"
       ],
+      idCategory: 2,
       "id": 2
     },
     {
@@ -27,6 +30,7 @@ export const list = [
         "Steamed Milk",
         "Foam"
       ],
+      idCategory: 2,
       "id": 3
     },
     {
@@ -37,6 +41,7 @@ export const list = [
         "Espresso",
         "Hot Water"
       ],
+      idCategory: 3,
       "id": 4
     },
     {
@@ -46,6 +51,7 @@ export const list = [
       "ingredients": [
         "1oz Espresso"
       ],
+      idCategory: 3,
       "id": 5
     },
     {
@@ -55,6 +61,7 @@ export const list = [
       "ingredients": [
         "2oz Espresso"
       ],
+      idCategory: 3,
       "id": 6
     },
     {
@@ -65,6 +72,7 @@ export const list = [
         "1oz Espresso",
         "1oz Steamed Milk"
       ],
+      idCategory: 3,
       "id": 7
     },
     {
@@ -75,6 +83,7 @@ export const list = [
         "Coffee",
         "Espresso"
       ],
+      idCategory: 3,
       "id": 8
     },
     {
@@ -85,6 +94,7 @@ export const list = [
         "Espresso",
         "Foamed milk"
       ],
+      idCategory: 3,
       "id": 9
     },
     {
@@ -94,6 +104,7 @@ export const list = [
       "ingredients": [
         "Long pulled espresso"
       ],
+      idCategory: 3,
       "id": 10
     },
     {
@@ -104,6 +115,7 @@ export const list = [
         "Espresso",
         "Foam"
       ],
+      idCategory: 3,
       "id": 11
     },
     {
@@ -115,6 +127,7 @@ export const list = [
         "Steamed Milk",
         "Chocolate"
       ],
+      idCategory: 3,
       "id": 12
     },
     {
@@ -124,6 +137,7 @@ export const list = [
       "ingredients": [
         "Short pulled espresso"
       ],
+      idCategory: 3,
       "id": 13
     },
     {
@@ -134,6 +148,7 @@ export const list = [
         "Espresso",
         "Steamed Milk"
       ],
+      idCategory: 3,
       "id": 14
     },
     {
@@ -144,6 +159,7 @@ export const list = [
         "Espresso",
         "Ice cream"
       ],
+      idCategory: 3,
       "id": 15
     },
     {
@@ -154,6 +170,7 @@ export const list = [
         "Coffee",
         "Steamed Milk"
       ],
+      idCategory: 3,
       "id": 16
     },
     {
@@ -166,6 +183,7 @@ export const list = [
         "Sugar",
         "Cream"
       ],
+      idCategory: 3,
       "id": 17
     },
     {
@@ -177,6 +195,7 @@ export const list = [
         "Traditional",
         "Hot Water"
       ],
+      idCategory: 3,
       "id": 18
     },
     {
@@ -189,6 +208,7 @@ export const list = [
         "Sugar",
         "Milk"
       ],
+      idCategory: 3,
       "id": 19
     },
     {
@@ -201,6 +221,7 @@ export const list = [
         "Panela",
         "Traditional"
       ],
+      idCategory: 3,
       "id": 20
     }
   ]
