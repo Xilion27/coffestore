@@ -1,6 +1,6 @@
 import './App.css';
 import NavBar from './components/NavBar';
-
+import Cart from './components/Cart';
 import ItemListContainer from './components/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
@@ -44,14 +44,14 @@ function App() {
         <Route 
           path="/cart"
           element={
-            <p>Este sera el carrito</p>
+            <Cart />
           }
         />
 
         <Route 
           path="/about"
           element={
-            <p>Somos especialistas en Cafe</p>
+            <p>Secci[on nosotros</p>
           }
         />
       </Routes>

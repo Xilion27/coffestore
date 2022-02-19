@@ -27,17 +27,22 @@ useEffect(() => {
     console.log('You modified the amount of Items')
 }, [amount]);
 
+const onAdd = (evt) => {
+    evt.stopPropagation();
+    alert('Producto Agregado')
+   
+}
 
 return (
     <>
         <div className="text-center">
            {amount} Items 
         </div>
-        <div className="row">
+        <div className="row align-self-center">
             <button className="btn btn-secondary border col-sm-6" onClick={countLess}>-</button>
             <button className="btn btn-primary border col-sm-6" onClick={countMore}>+</button>  
         </div>
-        <a href="#" className="btn btn-primary">Add to Cart</a>
+        <p onClick={onAdd} className="btn btn-primary align-self-center col-sm-12">Add to Cart</p>
     </>
 )
 
