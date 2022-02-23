@@ -1,51 +1,46 @@
 import { useEffect, useState } from "react";
 
-const Items = (props) => {
-    const [amount, setAmount] = useState(0);
+
+const ItemCount = ({stock = 0, initial=1, onAdd }) => {
+    const [count, setCount] = useState(0);
     
 
-const countMore = () => {
-    setAmount(amount+1);
-}
+    useEffect(() => {
+        setCount(initial);
+    },[]);
 
-const countLess = () => {
-    setAmount(amount-1);
-}
-
-let stock = 5
-
-//ComponentDidMount
-useEffect(() => {
-    if (amount<0) {
-        alert("Amount value can't be negative")
-        setAmount(0)
+    const increment = () => {
+        if (count < stock) {
+            setCount(count + 1);
+        }
     }
-    if (amount>stock) {
-        alert('No Stock Available')
-        setAmount(stock)
-    }    
-    console.log('You modified the amount of Items')
-}, [amount]);
+    
+    const decrement = () => {
+        if (count > initial+1) {
+            setCount(count - 1);
+        }
+    }
 
-const onAdd = (evt) => {
-    evt.stopPropagation();
-    alert('Producto Agregado')
-   
-}
 
 return (
     <>
         <div className="text-center">
-           {amount} Items 
+           {count} Items 
         </div>
         <div className="row align-self-center">
-            <button className="btn btn-secondary border col-sm-6" onClick={countLess}>-</button>
-            <button className="btn btn-primary border col-sm-6" onClick={countMore}>+</button>  
+            <button className="btn btn-secondary border col-sm-6" onClick={decrement}>-</button>
+            <button className="btn btn-primary border col-sm-6" onClick={increment}>+</button>  
         </div>
-        <p onClick={onAdd} className="btn btn-primary align-self-center col-sm-12">Add to Cart</p>
+        
+        {
+            stock && count
+            ? <button className="btn btn-primary align-self-center col-sm-12" onClick={() => onAdd(count)}>Add to Cart</button>
+            : <button className="btn btn-primary align-self-center col-sm-12" disabled>Add to Cart</button>
+            
+        }
     </>
 )
 
 }
 
-export default Items;
+export default ItemCount;

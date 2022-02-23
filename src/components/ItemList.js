@@ -8,7 +8,8 @@ export const list = [
         "Coffee"
       ],
       idCategory: 1,
-      id: 1
+      id: 1,
+      stock : 5
     },
     {
       "title": "Latte",
@@ -19,7 +20,8 @@ export const list = [
         "Steamed Milk"
       ],
       idCategory: 2,
-      "id": 2
+      "id": 2,
+      stock : 5
     },
     {
       "title": "Cappuccino",
@@ -31,7 +33,8 @@ export const list = [
         "Foam"
       ],
       idCategory: 2,
-      "id": 3
+      "id": 3,
+      stock : 5
     },
     {
       "title": "Americano",
@@ -42,7 +45,8 @@ export const list = [
         "Hot Water"
       ],
       idCategory: 3,
-      "id": 4
+      "id": 4,
+      stock : 5
     },
     {
       "title": "Espresso",
@@ -52,7 +56,8 @@ export const list = [
         "1oz Espresso"
       ],
       idCategory: 3,
-      "id": 5
+      "id": 5,
+      stock : 5
     },
     {
       "title": "Doppio",
@@ -62,7 +67,8 @@ export const list = [
         "2oz Espresso"
       ],
       idCategory: 3,
-      "id": 6
+      "id": 6,
+      stock : 5
     },
     {
       "title": "Cortado",
@@ -73,7 +79,8 @@ export const list = [
         "1oz Steamed Milk"
       ],
       idCategory: 3,
-      "id": 7
+      "id": 7,
+      stock : 5
     },
     {
       "title": "Red Eye",
@@ -84,7 +91,8 @@ export const list = [
         "Espresso"
       ],
       idCategory: 3,
-      "id": 8
+      "id": 8,
+      stock : 5
     },
     {
       "title": "Galão",
@@ -95,7 +103,8 @@ export const list = [
         "Foamed milk"
       ],
       idCategory: 3,
-      "id": 9
+      "id": 9,
+      stock : 5
     },
     {
       "title": "Lungo",
@@ -105,7 +114,8 @@ export const list = [
         "Long pulled espresso"
       ],
       idCategory: 3,
-      "id": 10
+      "id": 10,
+      stock : 5
     },
     {
       "title": "Macchiato",
@@ -116,7 +126,8 @@ export const list = [
         "Foam"
       ],
       idCategory: 3,
-      "id": 11
+      "id": 11,
+      stock : 5
     },
     {
       "title": "Mocha",
@@ -128,7 +139,8 @@ export const list = [
         "Chocolate"
       ],
       idCategory: 3,
-      "id": 12
+      "id": 12,
+      stock : 5
     },
     {
       "title": "Ristretto",
@@ -138,7 +150,8 @@ export const list = [
         "Short pulled espresso"
       ],
       idCategory: 3,
-      "id": 13
+      "id": 13,
+      stock : 5
     },
     {
       "title": "Flat White",
@@ -149,7 +162,8 @@ export const list = [
         "Steamed Milk"
       ],
       idCategory: 3,
-      "id": 14
+      "id": 14,
+      stock : 5
     },
     {
       "title": "Affogato",
@@ -160,7 +174,8 @@ export const list = [
         "Ice cream"
       ],
       idCategory: 3,
-      "id": 15
+      "id": 15,
+      stock : 5
     },
     {
       "title": "Café au Lait",
@@ -171,7 +186,8 @@ export const list = [
         "Steamed Milk"
       ],
       idCategory: 3,
-      "id": 16
+      "id": 16,
+      stock : 5
     },
     {
       "title": "Irish",
@@ -184,7 +200,8 @@ export const list = [
         "Cream"
       ],
       idCategory: 3,
-      "id": 17
+      "id": 17,
+      stock : 5
     },
     {
       "title": "Guayoyo",
@@ -196,7 +213,8 @@ export const list = [
         "Hot Water"
       ],
       idCategory: 3,
-      "id": 18
+      "id": 18,
+      stock : 5
     },
     {
       "title": "Cortadito",
@@ -209,7 +227,8 @@ export const list = [
         "Milk"
       ],
       idCategory: 3,
-      "id": 19
+      "id": 19,
+      stock : 5
     },
     {
       "title": "Aguapanela Coffee",
@@ -222,7 +241,8 @@ export const list = [
         "Traditional"
       ],
       idCategory: 3,
-      "id": 20
+      "id": 20,
+      stock: 5
     }
   ]
 
