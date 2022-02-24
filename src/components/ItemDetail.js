@@ -1,43 +1,47 @@
-import { Link } from "react-router-dom";
+import { useState, useContext } from 'react';
+import { Link } from 'react-router-dom';
 import ItemCount from './ItemCount';
-import { useState } from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { CartContext } from './CartContext';
+import { DetailContainer, WrapperDetail, ImgContainer, ImageDetail, InfoContainer, Title, Desc, Price } from './styledComponents';
+
 
 const ItemDetail = ({ item }) => {
     const [itemCount, setItemCount] = useState(0);
+    const test = useContext(CartContext);
     
     const onAdd = (qty) => {
         alert("You have selected " + qty + " items.");
         setItemCount(qty);
+        test.addToCart(item, qty);
+        
     }
 
 return (
-<>
+    <>
         {
-            item
-            ?
-    <div className="row center">
-        {console.log(item)}
-            <div className="card container col-sm-6" key={item.id}>
-                <div className="card-body">
-                    <h5 className="center">{item.title}</h5>
-                    <div className="m-3 col-sm-12">
-                        <img className="card-img-top img-thumbnail rounded" src={item.image} alt="Card image cap"></img>
-                    </div>
-                    <div className="m-3 col-sm-12">
-                        <p>{item.description}</p>
-                    </div>
-                </div>
-                {
-                    itemCount === 0
-                    ? <ItemCount stock={item.stock} initial={item} onAdd={onAdd} />
-                    : <button><Link to='/cart'>Carrito</Link></button>
-                }                
-            </div>
-    </div>
-            : <p>Cargando...</p>
-        }    
-</>
+            item && item.image           
+            ? 
+            <DetailContainer>               
+                <WrapperDetail>
+                    <ImgContainer>
+                        <ImageDetail src={item.image[0]} />
+                    </ImgContainer>
+                    <InfoContainer>
+                        <Title>{item.name}</Title>
+                        <Desc>{item.description}</Desc>
+                        <Price>$ {item.cost}</Price>
+                        <Desc>{item.stock} unidades en stock</Desc>
+                    </InfoContainer>
+                    {
+                        itemCount === 0
+                        ? <ItemCount stock={item.stock} initial={itemCount} onAdd={onAdd} />
+                        : <Link to='/cart' style={{textDecoration: "none"}}><button variant="contained" color="secondary">CheckOut</button></Link>
+                    }
+                </WrapperDetail>
+            </DetailContainer>
+            : <p>ups...</p> 
+        }
+    </>
     );
 }
 

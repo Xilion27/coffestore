@@ -1,11 +1,16 @@
-import cart from "../cart.jpg"
-import { Link } from "react-router-dom";
+import { Badge } from '@mui/material';
+import { ShoppingCart } from '@mui/icons-material';
+import { useContext } from 'react';
+import { CartContext } from './CartContext';
 
 const CartWidget = () => {
+    const test = useContext(CartContext);
+
     return (
-        <Link to='/cart'><img width={60} height={50} src={cart} alt='carrito'/></Link>
-        
-    )
+        <Badge badgeContent={test.calcItemsQty()} color="secondary">
+            <ShoppingCart />
+        </Badge>
+    );
 }
 
 export default CartWidget;

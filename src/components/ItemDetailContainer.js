@@ -1,23 +1,24 @@
-import {list, getList} from "./ItemList";
-import { useParams } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router";
+import customFetch from "../utils/customFetch";
 import ItemDetail from "./ItemDetail";
 
+const { products } = require('../utils/products');
+
 const ItemDetailContainer = () => {
-    const [dato, setDato] = useState([]);
-    const {id} = useParams();
-
-    console.log(id)
-//Componentdidupdate
-useEffect(() => {
-    getList(list.filter(item => item.id === parseInt(id)), 1000)
-    .then(res => setDato(res))
-    .catch((e) => console.log(e));
-}, [id]);
-
-return (
-    <ItemDetail item={dato} />
-);}
-
+    const [dato, setDato] = useState({});
+    const { idItem } = useParams();
+    console.log(idItem)
+    useEffect(() => {
+        customFetch(500, products.find(item => item.id === parseInt(idItem)))
+            .then(result => setDato(result))
+            .catch(err => console.log(err))
+    }, []);
+       
+    console.log(idItem)
+    return (
+        <ItemDetail item={dato} />
+    );
+}
 
 export default ItemDetailContainer;
