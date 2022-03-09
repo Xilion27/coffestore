@@ -39,7 +39,7 @@ return (
                     }
                 </WrapperDetail>
             </DetailContainer>
-            : <p>ups...</p> 
+            : <p>Loading...</p> 
         }
     </>
     );

@@ -21,7 +21,7 @@ const NavBar = () => {
                 <Link to='/category/#' className="nav-link">Catalogo</Link>
               </li>
               <li className="nav-item">
-                <Link to='/item/2' className="nav-link">Detalle</Link>
+                <Link to='/item/YWrj1hBWgLPBmu5UhxEp' className="nav-link">Detalle</Link>
               </li>
               <li className="nav-item dropdown" >
                 <Link to="/category/2" className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

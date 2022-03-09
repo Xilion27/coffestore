@@ -5,8 +5,6 @@ import { firestoreFetch } from '../utils/firestoreFetch';
 
 
 
-const { products } = require('../utils/products');
-
 const ItemListContainer = () => {
     const [datos, setDatos] = useState([]);
     const { idCategory } = useParams();
