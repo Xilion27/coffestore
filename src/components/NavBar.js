@@ -21,19 +21,11 @@ const NavBar = () => {
                 <Link to='/category/#' className="nav-link">Catalogo</Link>
               </li>
               <li className="nav-item">
-                <Link to='/item/YWrj1hBWgLPBmu5UhxEp' className="nav-link">Detalle</Link>
+                <Link to='/category/1' className="nav-link">Solo Cafe</Link>
               </li>
-              <li className="nav-item dropdown" >
-                <Link to="/category/2" className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Categorias
-                </Link>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a className="dropdown-item" href="/category/1">Solo</a></li>
-                  <li><a className="dropdown-item" href="/category/2">Con Leche</a></li>
-                  <li><hr className="dropdown-divider"></hr></li>
-                  <li><a className="dropdown-item" href="/category/all">Todos</a></li>
-                </ul>
-              </li>
+              <li className="nav-item">
+                <Link to='/category/2' className="nav-link">Con Leche</Link>
+              </li>              
               <li className="nav-item">
                 <Link to='/about' className="nav-link">About us</Link>
               </li>
